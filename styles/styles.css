@@ -1797,14 +1797,18 @@ input[type="email"]:active {
 /* МОДАЛЬНОЕ ОКНО */
 
 .modal-container {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
+  position: fixed;
   background-color: rgb(242 242 242 / 80%);
   z-index: 3;
+}
+
+.modal-container-open {
+  display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
 }
 
 .modal-hotel-search-form {
@@ -2447,8 +2451,4 @@ input[type="number"] {
 
 .modal.submit-button:active span {
   opacity: 0.3;
-}
-
-.modal-container-close {
-  display: none;
 }
